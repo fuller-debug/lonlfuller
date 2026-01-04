@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
         :root {
         --primary-blue: #007bff;
         --headerfont: "EB Garamond";
+        --sansserif: "Lato"
         }
 
         /* 1. THE CORE MODERN SETUP */
@@ -22,7 +23,7 @@
         }
 
         body {
-            font-family: var(--headerfont);
+            font-family: Georgia, 'Times New Roman', Times, serif;
             line-height: 1.6;
             margin: 0;
             color: #2d3436;
@@ -61,7 +62,9 @@
 
         nav a {
             text-decoration: none;
-            font-family: var(--headerfont);
+            font-family: var(--sansserif);
+            font-weight: 400;
+            text-transform: uppercase;
             padding: 0.5rem 1rem;
             transition: 0.3s;
         }
@@ -83,7 +86,7 @@
         .services { background: #f1f5f9; }
 
         /* Modern Fluid Typography - gets smaller on mobile automatically */
-        h1 { font-size: clamp(2rem, 5vw, 4rem); }
+        h1 { font-size: clamp(2rem, 5vw, 4rem); font-family: var(--headerfont); }
 
         blockquote {font-style: italic;}
     </style>
