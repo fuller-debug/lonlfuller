@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="http://fonts.googleapis.com/css?family=Lato|EB+Garamond" rel="stylesheet" type="text/css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lon L Fuller</title>
@@ -9,7 +11,7 @@
 
         :root {
         --primary-blue: #007bff;
-        --headerfont: "Garamond";
+        --headerfont: "EB Garamond";
         }
 
         /* 1. THE CORE MODERN SETUP */
@@ -27,11 +29,10 @@
         }
 
         .logo a {
-            font-family: "Garamond";
+            font-family: var(--headerfont);
             font-size: 1.5rem;
             text-decoration: none;
             color: #000000;
-            letter-spacing: -1px;
         }
 
         header {
@@ -83,6 +84,8 @@
 
         /* Modern Fluid Typography - gets smaller on mobile automatically */
         h1 { font-size: clamp(2rem, 5vw, 4rem); }
+
+        blockquote {font-style: italic;}
     </style>
 </head>
 <body>
