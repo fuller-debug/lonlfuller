@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="http://fonts.googleapis.com/css?family=Lato|EB+Garamond" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Landing Page</title>
+    <title>Lon L Fuller</title>
     <style>
+
+        :root {
+        --primary-blue: #007bff;
+        --headerfont: "Garamond";
+        }
+
         /* 1. THE CORE MODERN SETUP */
         html {
             scroll-behavior: smooth;
@@ -13,24 +20,42 @@
         }
 
         body {
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: Georgia, serif;
             line-height: 1.6;
             margin: 0;
             color: #2d3436;
         }
 
-        /* 2. THE STICKY NAV */
+        .logo a {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: #963333;
+            letter-spacing: -1px;
+        }
+
+        header {
+        /* 1. Stick to top */
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        
+        /* 2. The Layout Engine */
+        display: flex; 
+        justify-content: space-between; /* Pushes logo left, nav right */
+        align-items: center;            /* Vertically centers both */
+        
+        /* 3. Aesthetics */
+        padding: 0 5%;
+        height: 70px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #eaeaea;
+        }
+
         nav {
-            position: sticky;
-            top: 0;
-            height: 70px;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px); /* Modern "Glass" effect */
             display: flex;
-            align-items: center;
-            justify-content: space-around;
-            z-index: 1000;
-            border-bottom: 1px solid #eee;
+            gap: 20px;
         }
 
         nav a {
@@ -58,37 +83,91 @@
         .services { background: #f1f5f9; }
 
         /* Modern Fluid Typography - gets smaller on mobile automatically */
-        h1 { font-size: clamp(2rem, 5vw, 4rem); }
+        h1 { font-size: clamp(2rem, 5vw, 4rem); font-family: var(--headerfont);}
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header>
+        <div class="logo">
+        <a href="#home">Lon L Fuller</a>
+        </div>
+    
+        <nav>
+            <a href="#home">Home</a>
+            <!--<a href="#about">About</a>
+            <a href="#services">Services</a>-->
+            <a href="#licensing">Licensing</a>
+        </nav>
+    </header>
 
     <section id="home" class="hero">
-        <h1>Fresh Web Design 2026</h1>
-        <p>No jQuery. No complex offsets. Just pure modern CSS.</p>
+        <blockquote><p>"The only formula that might be called a definition of law offered in these writings is by now thoroughly familiar: law is the enterprise of subjecting human conduct to the governance of rules. Unlike most modern theories of law, this view treats law as an activity and regards a legal system as the product of a sustained purposive effort."</p></blockquote>
+	<div class="attribution">Lon L. Fuller - <em>The Morality of Law</em></div>
+        <!--<figure class="right">
+        <img src="img/lon1.gif" alt="lon1" width="200"/>
+        </figure>-->
+
+        <p>Lon L. Fuller was an influential legal philosopher and scholar who lived from 1902 to 1978. Professor Fuller's books and articles have been translated into all the major world languages and his works still widely read and studied in law schools all over the world.</p>
+
+        <p>This website was established by Professor Fuller's estate to eliminate barriers to access to his works for scholars and individuals interested in important ideas in law and government. All works not in the public domain that are held by Professor Fuller's estate, including those originally published in the Harvard Law Review, are subject to a royalty-free Creative Commons license.</p>
+
+        <p>We welcome communication from readers, teachers and scholars of Professor Fuller's work. Please drop us a note at inquiries [at] lonlfuller.org to let us know how and why you are using Professor Fuller's work with students or scholarly publications.</p>
+
     </section>
 
-    <section id="about" class="about">
+    <!--<section id="works" class="about">
         <h2>About Us</h2>
         <p>In 2015, we used floats. Now we use Flexbox and Grid.</p>
     </section>
 
-    <section id="services" class="services">
+    <section id="biography" class="services">
         <h2>Services</h2>
         <p>Clicking the nav links above will scroll here smoothly.</p>
+    </section>-->
+
+    <section id="licensing">
+        
+        <h2>Licensing</h2>
+
+            <div class="infoarea">
+            <p><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.en"><img class="imag" alt="Creative Commons License" src="img/88x31.png" style="float:left; margin-right: 25px;"/></a> 
+
+            All of Lon Fuller&apos;s works are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.en">Creative Commons Attribution-Non-Commercial-NoDerivs 3.0 Unported License</a>.</p>
+
+            </div>
+
+
+            <div class="formarea">
+            <p>This means you may use his works for academic, non-commercial purposes. </p>
+            <p>However, we do ask that you email us at <a href="https://web.archive.org/web/20191203021139/mailto:inquiries@lonlfuller.org">INQUIRIES [AT] LONLFULLER.ORG</a> to notify us of your use of his work.</p>
+            </div>
+
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>The sticky nav stays visible the whole time.</p>
-    </section>
 
+
+
+    <script>
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
+
+    const observerOptions = {
+        threshold: 0.6 // Trigger when 60% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', 
+                        link.getAttribute('href').includes(entry.target.id));
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+</script>
 </body>
 </html>
