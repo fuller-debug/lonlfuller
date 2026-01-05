@@ -2,7 +2,6 @@
 date = '2026-01-04T23:21:35-08:00'
 draft = false
 title = 'Lon L. Fuller'
-description = 'home page'
 +++
 
 # Lon L. Fuller

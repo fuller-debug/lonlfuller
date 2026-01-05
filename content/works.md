@@ -35,9 +35,12 @@ Three lectures by the Harvard Law School professor examine legal positivism and 
 *Stanford University Press, 1967*
 
 
-## Anatomy of Law
+## Anatomy of Law 
 *F. A. Praeger, 1968*
 
+-
+---
+---
 
 # Articles
 ## The Case of the Speluncean Explorers
