@@ -2,3 +2,19 @@ baseURL = 'https://lonlfuller.org/'
 languageCode = 'en-us'
 title = 'Lon L Fuller'
 theme = 'xmin'
+
+
+[[menu.main]]
+    name = 'Works'
+    url = '/works/'
+    weight = 10
+
+[[menu.main]]
+    name = 'Biography'
+    url = '/bio/'
+    weight = 20
+
+[[menu.main]]
+    name = 'Licensing'
+    url = '/licensing/'
+    weight = 30
