@@ -3,7 +3,6 @@ draft = false
 title = 'Licensing'
 +++
 
-# Licensing
 
 Creative Commons License All of Lon Fuller's works are licensed under a Creative Commons Attribution-Non-Commercial-NoDerivs 3.0 Unported License.
 
