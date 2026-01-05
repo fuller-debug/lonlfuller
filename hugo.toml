@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Lon L Fuller'
 theme = 'xmin'
 
+[[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
 
 [[menu.main]]
     name = 'Works'
@@ -18,3 +22,7 @@ theme = 'xmin'
     name = 'Licensing'
     url = '/licensing/'
     weight = 30
+
+
+[params]
+  footer_copy = "© 2024 My Name"
