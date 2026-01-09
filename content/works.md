@@ -48,8 +48,8 @@ In this article - one of the most frequently cited pieces to appear in the Harva
         
 ## Reason & Fiat in Case Law, 59: 376
 ## Freedom-A Suggested Analysis 68:1305
-[Download PDF](pdf/An_Afterword_Science_and_the_Judicial_Process.pdf)
+[Download PDF](../pdf/An_Afterword_Science_and_the_Judicial_Process.pdf)
 ## Positivism & Fidelity to Law-A Reply to Professor Hart 71:630
 ## The Forms and Limits of Adjudication, 92 HARV. L. REV. 353. ( 1978). Ľ
 ## An Afterword: Science & the Judicial Process 79: 1604
-[Download PDF](static/pdf/Freedom_A_Suggested_Analysis.pdf)
+[Download PDF](../pdf/Freedom_A_Suggested_Analysis.pdf)
