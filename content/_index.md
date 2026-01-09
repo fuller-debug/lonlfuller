@@ -17,4 +17,4 @@ Lon L. Fuller was an influential legal philosopher and scholar who lived from 19
 
 This website was established by Professor Fuller's estate to eliminate barriers to access to his works for scholars and individuals interested in important ideas in law and government. All works not in the public domain that are held by Professor Fuller's estate, including those originally published in the Harvard Law Review, are subject to a royalty-free Creative Commons license.
 
-We welcome communication from readers, teachers and scholars of Professor Fuller's work. Please drop us a note from the licensing page to let us know how and why you are using Professor Fuller's work with students or scholarly publications.
+We welcome communication from readers, teachers and scholars of Professor Fuller's work. Please drop us a note from [the licensing page](licensing) to let us know how and why you are using Professor Fuller's work with students or scholarly publications.
